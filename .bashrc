@@ -12,6 +12,7 @@ esac
 #[[ $- = *i* ]] && 
 source ~/.bash/liquidprompt/liquidprompt
 
+export EDITOR=/usr/bin/vim
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 
