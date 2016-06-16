@@ -8,12 +8,6 @@ case $- in
       *) return;;
 esac
 
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
-alias add='edit ~/.bashrc;source ~/.bashrc'
-
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
 #[[ $- = *i* ]] && 
 source ~/.bash/liquidprompt/liquidprompt
@@ -82,6 +76,13 @@ fi
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+if [ -f /etc/bash.bashrc ]; then
+	. /etc/bash.bashrc
 fi
 
 # enable programmable completion features (you don't need to enable
