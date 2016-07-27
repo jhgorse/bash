@@ -22,7 +22,7 @@ case "$1" in
         if [ "0" -eq "0" ]; then
             pygmentize -f 256 -l sh "$1"
         fi
-        head -n1 | grep "python" "$1" > /dev/null
+        head -n1 "$1" | grep "python" > /dev/null
         if [ "0" -eq "0" ]; then
             pygmentize -f 256 -l py "$1"
         else
