@@ -5,3 +5,26 @@
 ## arrow down
 "\e[B":history-search-forward
 
+# Arrow keys in keypad mode
+"\C-[OA": history-search-backward
+"\C-[OB": history-search-forward
+"\C-[OC": forward-char
+"\C-[OD": backward-char
+
+# Arrow keys in ANSI mode
+"\C-[[A": history-search-backward
+"\C-[[B": history-search-forward
+"\C-[[C": forward-char
+"\C-[[D": backward-char
+
+# Arrow keys in 8 bit keypad mode
+"\C-M-OA": history-search-backward
+"\C-M-OB": history-search-forward
+"\C-M-OC": forward-char
+"\C-M-OD": backward-char
+
+# Arrow keys in 8 bit ANSI mode
+"\C-M-[A": history-search-backward
+"\C-M-[B": history-search-forward
+"\C-M-[C": forward-char
+"\C-M-[D": backward-char
