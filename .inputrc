@@ -1,11 +1,12 @@
 #set editing-mode vi
-"\C-x\C-r": re-read-init-file
 ## arrow up
-"\e[A":history-search-backward
 ## arrow down
-"\e[B":history-search-forward
-
 # Arrow keys in keypad mode
+
+"\C-x\C-r": re-read-init-file
+
+"\e[A":history-search-backward
+"\e[B":history-search-forward
 "\C-[OA": history-search-backward
 "\C-[OB": history-search-forward
 
