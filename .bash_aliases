@@ -6,8 +6,7 @@ alias l='ls -CF'
 alias add='edit ~/.bash_aliases;source ~/.bash_aliases'
 alias erc='edit ~/.bashrc;source ~/.bashrc'
 
-alias vcsh-bash-enable="echo 'echo \$- | grep -q i 2>/dev/null && . ~/.config/bash/local.sh' >> ~/.bashrc;source ~/.bashrc"
+alias vcsh-bash-enable="echo '[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt' >> ~/.config/bash/local.sh"
 
 alias vcsh-bash-commit-push='vcsh bash commit -m "updates";vcsh bash push'
 alias vcsh-bash-pull='vcsh bash pull'
-
