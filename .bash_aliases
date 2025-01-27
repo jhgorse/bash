@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias ls='LSCOLORS=gxfxcxdxbxexexabagacad /bin/ls -bFHGLOPW'
+
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'

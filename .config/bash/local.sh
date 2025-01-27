@@ -14,3 +14,4 @@ PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 shopt -s checkwinsize
 
 
+[[ himBH = *i* ]] && source ~/.liquidprompt/liquidprompt
